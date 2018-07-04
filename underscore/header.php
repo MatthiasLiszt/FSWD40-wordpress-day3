@@ -27,41 +27,33 @@
 
 <body <?php body_class(); ?>>
 <header id="thisheader">
-<center><h1>CFV NEWS Agency</h1></center>
+<center>		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1></center>
 <div class="blog-masthead">
 <div class="container">
        <nav class="blog-nav">
          <?php
            wp_nav_menu( array(
-               'menu'              => 'primary',
-               'theme_location'    => 'primary',
-               'depth'             => 2,
-               'container'         => 'div',
-               'container_class'   => 'collapse navbar-collapse',
-               'container_id'      => 'bs-example-navbar-collapse-1',
-               'menu_class'        => 'nav navbar-nav',
-               'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-               'walker'            => new WP_Bootstrap_Navwalker())
+               'menu-id'              => 'primary-menu',
+               'theme_location'    => 'menu-1',
+               
+               'menu_class'        => 'navbar-nav mr-auto'
+               )
            );
        ?>
        </nav>
      </div>
 </div>
-</header>
-<div id="page" class="site">
-	<a id="pagelinks" class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_first_underscore' ); ?></a>
-
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		
 				<?php
 			else :
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				
 				<?php
 			endif;
 			$_first_underscore_description = get_bloginfo( 'description', 'display' );
@@ -73,13 +65,13 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_first_underscore' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
+			
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+
+</header><!-- thisheader -->
+<div id="page" class="site">
+	<a id="pagelinks" class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_first_underscore' ); ?></a>
+
 
 	<div id="content" class="site-content">

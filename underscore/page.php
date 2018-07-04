@@ -36,10 +36,10 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<div id="mysidebar">
+ <div id="mysidebar">
 <?php
 get_sidebar();
 ?>
-</div>
-</div>
+ </div>
+</div><!-- sidewrapper -->
 <?php get_footer(); ?>

@@ -16,6 +16,18 @@ h1{
  width: 100vw;
 }
 
+#thisheader ul{
+ display: inline;
+ list-style-type: none;
+ padding-left: 2em;
+}
+
+#thisheader li{
+ margin-left: 1em;
+ display: inline;
+ 
+}
+
 #primary{
  width: 74vw;
  padding: 2em;
@@ -35,7 +47,7 @@ h1{
 
 #sidewrapper{
  position: absolute;
- top: 12vh;
+ top: 28vh;
  
  width: 96vw;
  display: flex;
@@ -50,10 +62,25 @@ h1{
 }
 
 #masthead{
+ font-size: 0.8em;
+ padding-left: 2em;
+ background-color: orange;
+ height: 1em;
+ overflow: hidden;
+}
+
+#masthead:hover{
+ font-size: 0.8em;
+ background-color: white;
+ height: auto !important;
+}
+
+/*
+#masthead{
  position: absolute;
- top: 7vh;
- height: 21px;
- width: 76vw;
+ top: 32vh;
+ height: 3vh;
+ width: 100vw;
  background-color: black;
  padding-left: 2em;
  overflow: hidden;
@@ -61,7 +88,7 @@ h1{
 
 #masthead:hover{
  position: absolute;
- top: 7vh;
+ top: 32vh;
  font-size: 0.6em;
  height: 20vh;
  //overflow: scroll;
@@ -70,6 +97,9 @@ h1{
  background-color: transparent;
 }
 
+*/
+
 #pagelinks{
  display: none;
 }
+
