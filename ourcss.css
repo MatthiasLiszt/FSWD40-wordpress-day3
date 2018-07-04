@@ -1,0 +1,75 @@
+header{
+ //background-color: lightgreen;
+ 
+}
+
+h1{
+ color: red;
+ font-family: "sans-serif";
+}
+
+#thisheader{
+ position: fixed;
+ top: 1px;
+ z-index: 8888;
+ background-color: lightgreen;
+ width: 100vw;
+}
+
+#primary{
+ width: 74vw;
+ padding: 2em;
+}
+
+#mysidebar{
+ position: absolute;
+ top: 5em;
+ right: 8px;
+ //z-index: 9999;
+ width: 20vw;
+ background-color: lightgrey;
+ padding: 1.5em;
+ //overflow: scroll;
+ //height: 90vh;
+}
+
+#sidewrapper{
+ position: absolute;
+ top: 12vh;
+ 
+ width: 96vw;
+ display: flex;
+ flex-direction: row;
+ 
+}
+
+#myfooter{
+ position: fixed:
+ bottom: 3px;
+ 
+}
+
+#masthead{
+ position: absolute;
+ top: 7vh;
+ height: 21px;
+ width: 76vw;
+ background-color: black;
+ padding-left: 2em;
+ overflow: hidden;
+}
+
+#masthead:hover{
+ position: absolute;
+ top: 7vh;
+ font-size: 0.6em;
+ height: 20vh;
+ //overflow: scroll;
+ width: 76vw;
+ padding-left: 2em;
+ background-color: transparent;
+}
+
+#pagelinks{
+ display: none;
+}
